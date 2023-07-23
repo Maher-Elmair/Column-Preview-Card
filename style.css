@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*small*/
+@media (min-width: 577px) {
+    .container {
+        width: 550px;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 740px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* desktop  */
+@media (min-width: 1300px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.card {
+    width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 7px 14px 1px #a3a3a3;
+    position: relative;
+    top: 12rem;
+}
+
+.sedans {
+    background-color: rgb(226, 133, 37);
+    padding: 35px;
+}
+
+.suvs {
+    background-color: rgb(1, 105, 114);
+    padding: 35px;
+}
+
+.luxury {
+    background-color: rgb(0, 64, 63);
+    padding: 35px;
+}
+
+
+.one {
+    color: white;
+    padding: 30px 0px 30px 0px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.two {
+    color: #e7e7e7c0;
+    padding: 0px 0px 80px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    line-height: 1.6;
+
+}
+
+.two::first-letter {
+    text-transform: uppercase;
+}
+
+button {
+    border-radius: 50px;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    padding: 12px 30px 12px 30px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 2px solid white;
+    color: transparent;
+}
+
+.one_button {
+    color: rgb(226, 133, 37);
+    box-shadow: 0px 7px 14px 1px rgb(172 101 28 / 90%);
+
+}
+
+.two_button {
+    color: rgb(1, 105, 114);
+    box-shadow: 0px 7px 14px 1px rgb(1 72 78);
+}
+
+.there_button {
+    color: rgb(0, 64, 63);
+    box-shadow: 0px 7px 14px 1px rgb(0 28 27);
+
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+@media only screen and (max-width:820px) {
+    .card {
+        display: block;
+        width: 600px;
+        top: 6rem;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .card {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .card {
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .card {
+        width: 320px;
+    }
+}
+
+/*! start Attribution */
+.attribution {
+    position: relative;
+    top: 20rem;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+    /* margin: auto; */
+}
+
+.attribution a {
+    font-size: smaller;
+    text-decoration: none;
+    color: rgb(1, 105, 114);
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+}
+
+.attribution a:hover::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    content: "\f0a9";
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+@media only screen and (max-width:820px) {
+    .attribution {
+        position: relative;
+        top: 10rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .attribution {
+        white-space: break-spaces;
+        line-height: 2;
+        left: 0;
+        width: -webkit-fill-available;
+    }
+}
+
+/*! end Attribution */
